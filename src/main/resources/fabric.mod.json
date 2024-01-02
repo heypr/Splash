@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "Splash",
+	"version": "${version}",
+	"name": "Splash",
+	"description": "Splash!",
+	"authors": [
+		"hyper (straw.hat on Discord)"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.hyper.Splash"
+		],
+		"client": [
+			"me.hyper.SplashClient"
+		]
+	},
+	"mixins": [
+		"Splash.mixins.json",
+		{
+			"config": "Splash.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
