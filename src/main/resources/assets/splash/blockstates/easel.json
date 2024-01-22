@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "splash:block/easel" },
+    "facing=east":  { "model": "splash:block/easel", "y":  90 },
+    "facing=south": { "model": "splash:block/easel", "y": 180 },
+    "facing=west":  { "model": "splash:block/easel", "y": 270 }
+  }
+}

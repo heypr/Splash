@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "Splash",
+	"id": "splash",
 	"version": "${version}",
 	"name": "Splash",
 	"description": "Splash!",
@@ -11,16 +11,16 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"me.hyper.Splash"
+			"me.hyper.splash.Splash"
 		],
 		"client": [
-			"me.hyper.SplashClient"
+			"me.hyper.splash.SplashClient"
 		]
 	},
 	"mixins": [
-		"Splash.mixins.json",
+		"splash.mixins.json",
 		{
-			"config": "Splash.client.mixins.json",
+			"config": "splash.client.mixins.json",
 			"environment": "client"
 		}
 	],

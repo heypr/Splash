@@ -1,4 +1,4 @@
-package me.hyper.util;
+package me.hyper.splash.util;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Block;
@@ -13,11 +13,11 @@ import net.minecraft.util.Identifier;
 public class Utilities {
 
     public static void registerItem(String path, Item item) {
-        Registry.register(Registries.ITEM, new Identifier("Splash", path), item);
+        Registry.register(Registries.ITEM, new Identifier("splash", path), item);
     }
 
     public static void registerBlock(String path, Block block) {
-        Registry.register(Registries.BLOCK, new Identifier("Splash", path), block);
+        Registry.register(Registries.BLOCK, new Identifier("splash", path), block);
     }
 
     public static void addItemAfter(RegistryKey<ItemGroup> group, ItemConvertible firstItem, ItemConvertible secondItem) {
@@ -25,5 +25,6 @@ public class Utilities {
             content.addAfter(firstItem, secondItem);
         });
     }
+
 
 }
